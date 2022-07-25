@@ -1,0 +1,146 @@
+/* banner-css */
+
+ 
+ /* ---橫幅--- */
+
+        /* 橫幅區域 */
+        .banner-area{
+            height: 700px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #F1EDE8;
+            display: flex;
+            flex-wrap: wrap;            
+        }
+        /* 菜單盒 */
+        .menu-box{
+            width: 400px;
+            background-color: #F6F4F0;
+            margin-left: 40px;
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        /* 搜尋內容盒 */
+        .banner-center{
+            margin-top: 120px;
+            width: 350px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+         /* 菜餚照片區 */
+         .dish-area{
+            position: relative;
+            top: 20px;
+            margin-right: 0;
+            margin-left: auto;
+        }
+        /* 菜單盒>菜單盒清單 */
+        .menu-box-list{
+            padding: 100px;
+            /* 文字位置 */
+            text-align: center;
+            line-height: 80px;
+            letter-spacing: 0.15em;
+        }
+        /* 菜單盒>菜單盒清單>清單項目*/
+        .menu-box-list-itme{
+            width: 100px;
+            margin: 0px;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.5);
+            /* color: rgba(0, 0, 0,); */
+            /* 變色使用 */
+        }
+        /* 菜單盒>背景字*/
+        .menu-box-bg-words{
+            width: 600px;
+            height: 200px;
+            margin-left: 50px;
+            margin-top: 250px;
+            position: absolute;
+            transform:rotate(-90deg);
+        }
+        /* 菜單盒>背景字>文字 */
+        .bg-words-tasty{
+            font-size: 170px;
+            font-weight: 900;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            align-items: center;            
+        }
+
+         /* ---白色方格區域--- */
+        .banner-info-content{
+            background-color: #ffffff80;
+            display: flex;
+            height: 200px;
+            margin-left: 40px;
+            margin-top: 80px;
+        }
+        .banner-info-title{
+            margin: auto;
+            width: 70px;
+            transform: rotate(-90deg);
+        }
+        .banner-info-describe{
+            width: 380px;
+            height: 120px;
+            font-size: 14px;
+            line-height: 30px;
+            float: right;
+            margin: auto;
+        }
+        .banner-info-describe-text{
+        }
+
+        /* ---搜尋區域--- */
+        /* 搜尋內容盒>置中品牌文字 */
+        .mid-brand-text{
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 80px;
+            text-align: center;
+        }
+        /* 搜尋內容盒>搜尋列區域 */
+        .search-bar-area{
+            margin-top: 20px;
+        }
+        /* 搜尋內容盒>搜尋列區域>搜尋列 */
+        .search{
+            position:relative;
+            display: flex;
+        }
+        /* 搜尋內容盒>搜尋列區域>搜尋列>搜尋列的框 */
+        .search-bar{
+            width: 80%;
+            padding: 0;
+            height: 50px;
+            background-color:  rgba(255, 255, 255, 0.3);
+            border: none;
+            padding-left: 10px;
+        }
+        /* 搜尋內容盒>搜尋列區域>搜尋列>搜尋列的按鈕 */
+        .search-btn{
+            padding: 0;
+            width: 20%;
+            height: 50px;
+            border: none;
+            background-color:  rgba(255, 255, 255, 0.3);
+        }
+
+        /* ---菜餚照片區--- */
+        /* 菜餚照片區>照片盒 */
+        .dish-pic-box{
+            width: 300px;
+            overflow: hidden;
+        }
+        /* 菜餚照片區>照片盒>img */
+        .main-dish-pic{
+        }
+        /* 菜餚照片區>方形盒 */
+        .diamond-box{
+
+        }

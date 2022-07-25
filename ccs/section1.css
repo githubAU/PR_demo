@@ -1,0 +1,131 @@
+/* section1 */
+ /* 區段-靈感 */
+ .section-inspiration{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;    
+    position: relative;
+}
+
+/* 區段-靈感>裝飾 */
+.bg-pattern-inspiration{
+    overflow: hidden;
+}
+/* 區段-靈感>裝飾文字 */
+.second-title-inspiration-area-bg-words{
+    position: absolute;
+    margin-left: 105px;
+    margin-right: auto;
+}
+/* 區段-靈感>裝飾菱形 */
+.diamond-box-fill-dailyrecipe-text{
+    width: 200px;
+    height: 200px;
+    border: solid rgba(255, 255, 255, 0.5) 10px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -15px;
+    bottom: -105px;
+    z-index: -10;
+}
+.diamond-box-fill-dailyrecipe-pic-down{
+    width: 200px;
+    height: 200px;
+    background-color:  rgba(255, 255, 255, 0.5);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 250px;
+    bottom: 100px;
+    margin: 0px;
+}
+.diamond-box-fill-dailyrecipe-pic-up{
+    width: 100px;
+    height: 100px;
+    background-color:  rgba(255, 255, 255, 0.5);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 250px;
+    top: -200px;
+    margin: 0px;
+}
+.bg-main-shape{
+    background-color: #F3ECE4;
+    width: 1100px;
+    height: 750px;
+    position: absolute;
+    top: 70px;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 50%);
+    z-index: -10;
+}
+
+/* 區段-靈感>靈感－內容區 */
+.section-inspiration-content{
+    margin: auto;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+/* 區段-靈感>靈感－內容區>次標區 */
+.second-title-inspiration-area{
+    margin-top: 120px;
+    margin-left: 200px;
+    position: relative;
+}
+/* 區段-靈感>靈感－內容區>次標區>次標盒 */
+.second-title-inspiration-box{
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+/* 區段-靈感>靈感－內容區>食譜內容 */
+.dailyrecipe-content{
+    margin-top: 100px;
+}
+/* 區段-靈感>靈感－內容區>食譜內容>內文盒 */
+.dailyrecipe-content-box{
+    border: solid rgba(255, 255, 255, 0.5) 10px;
+    width: 600px;
+    height: 615px;
+    margin-left: 40px;
+}
+/* 區段-靈感>靈感－內容區>食譜內容>內文盒>內文 */
+.dailyrecipe-content-box-text{
+    width: 350px;
+    margin-left: 45px;
+}
+.ingredients-title-text{
+    margin-top: 40px;
+}
+.ingredients-subtitle-text{
+    margin-top: 50px;
+}
+.ingredients-text{
+    margin-top: 25px;
+    line-height: 40px;
+    letter-spacing: 0.15em;
+}
+/* 區段-靈感>靈感－內容區>食譜內容>內文盒>內文>完整食譜按鈕 */
+.dailyrecipe-content-viewricepe-box{
+    width: 120px;
+    height: 45px;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    line-height: 30px;
+    float: right;
+}
+/* 區段-靈感>靈感－內容區>食譜照片區域 */
+.dailyrecipe-pic-area{
+    position: absolute;
+    top: 200px;
+    right: 150px;
+}
+/* 區段-靈感>靈感－內容區>食譜照片區域>照片盒 */
+.dailyrecipe-pic-box{
+   width: 500px;
+   height: 500px;
+   overflow: hidden;          
+}
+.dailyrecipe-pic img{  
+}

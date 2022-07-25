@@ -1,0 +1,75 @@
+
+
+ .section-ourkitchen{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+   }
+
+   .section-ourkitchen-content{
+    position: relative;
+    margin: auto;
+   }
+
+   .pic-ourkitchen-content{
+    display: flex;
+    margin: auto;
+   }
+
+   .ourkitchen-pic{
+    width: 580px;
+    height: 580px;
+    overflow: hidden; 
+   }
+
+   .ourkitchen-content{
+    width: 400px;
+    height: 280px;
+    border: solid rgba(255, 255, 255, 0.5) 10px;
+    margin-left: -50px;
+    margin-top: 20px;
+   }
+   .ourkitchen-content-square-boxs{
+    width: 200px;
+    margin: auto;
+   }
+
+   .ourkitchen-content-square-box{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    border: solid rgba(0, 0, 0,1) 1px;
+   }
+
+   /* 白色方塊 */
+
+   .ourkitchen-info-content{
+    width: 500px;
+    height: 180px;
+    background-color: #ffffff80;
+    display: flex;
+   }
+
+   .ourkitchen-info-title{
+    margin: auto;
+    width: 70px;
+    transform: rotate(-90deg);
+   }
+   .ourkitchen-info-describe{
+    font-size: 14px;
+    line-height: 30px;
+    float: right;
+    margin: auto;
+   }
+
+   .ourkitchen-info-content{
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+   }
+
+   .second-title-ourkitchen-box{
+    margin-left: 500px;
+   }

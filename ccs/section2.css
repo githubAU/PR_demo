@@ -1,0 +1,144 @@
+        /* blog區間 */
+            .section-blog{
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 300px;
+           }
+           /* blog區間>blog內容 */
+           .section-blog-content{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 70px;
+           }
+           /* ---blog區間>blog內容>裝飾物--- */
+    
+           .bg-pattern-blog{
+            position: relative;
+            width: 1200px;
+           }
+            .news-diamond-stroke{
+            width: 100px;
+            height: 100px;
+            border: solid rgba(255, 255, 255, 0.5) 10px;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 150px;
+            bottom: -875px;
+            }
+            .news-diamond-fill{
+            width: 100px;
+            height: 100px;
+            background-color:  rgba(255, 255, 255, 0.5);
+            transform: rotate(45deg);
+            position: absolute;
+            left: 160px;
+            bottom: -655px;
+            }
+            .news-list-diamond-stroke{
+            width: 70px;
+            height: 70px;
+            border: solid rgba(255, 255, 255, 0.5) 10px;
+            transform: rotate(45deg);
+            position: absolute;
+            right: 400px;
+            top: -20px;
+            z-index: -11;
+            }
+            .news-list-square-stroke{
+            width: 630px;
+            height: 740px;
+            border: solid rgba(255, 255, 255, 0.5) 10px;
+            position: absolute;
+            right: 30px;
+            top: 0px;
+            z-index: -12;
+            }
+
+            .news-list-square-fill{
+            width: 500px;
+            height: 800px;
+            background-color: #F3ECE4;
+            clip-path: polygon(0 0, 100% 10%, 100% 89%, 0 100%);
+            position: absolute;
+            right: -45px;
+            top: 15px;
+            z-index: -10;
+            }
+
+
+            .news-pic-square-fill{
+            width: 650px;
+            height: 600px;
+            background-color:  #F3ECE4;
+            clip-path: polygon(1% 13%, 98% 0, 76% 74%, 21% 68%);
+            position: absolute;
+            left: -40px;
+            top: 270px;
+            z-index: -10;
+            }
+            
+    
+    
+            /* ---標題區域--- */
+           .second-title-blog-area{
+            position: relative;
+           }
+           .second-title-blog-box{
+            position: absolute;
+            left: 200px;
+           }      
+           /* 新聞清單區域 */
+           .news-content-list{
+            position: relative;
+            margin-left: 90px;
+            margin-top: 100px;
+            }
+            .news-list{
+                width: 470px;
+            }
+            .news-item-box{
+                display: flex;
+                margin-top: 40px;
+                padding-bottom: 10px;
+                border-bottom: solid rgba(255, 255, 255, 0.5) 2px;
+            }
+            .news-item{
+                letter-spacing: 0.2em;
+                line-height: 30px;
+            }
+            .icon_triangle{
+                width: 10px;
+                height: 10px;
+                margin-top: 5px;
+                margin-right: 10px;
+            }
+            
+            /* ---照片新聞區域--- */
+            .blog-main-news-area{  
+                margin-left: 45px;  
+            } 
+           .news-pic-box{
+            width: 500px;
+            height: 350px;
+            overflow: hidden; 
+           }
+           /* 照片區標題內容 */
+           .news-content{
+            margin-top: 15px;
+            width: 450px;
+            height: 150px;
+            text-overflow: hidden;
+           }
+           .news-title-text{
+            line-height: 40px;
+           }
+           .news-date-text{
+           }
+           /* 照片區標題內容>日期盒 */
+           .news-date-box{
+            margin-top: 30px;
+            width: 60px;
+            height: 30px;
+            float: right;
+           }

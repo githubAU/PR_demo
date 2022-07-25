@@ -1,0 +1,287 @@
+ 
+ /* main CSS主要設定 */
+    /* ---底色設置--- */
+
+            /* 網頁底色 */
+        body{      
+            background-color: #F6F4F0;
+            font-family: 'GenRyuMin JP';
+            letter-spacing: 0.15em;
+        }
+
+        /* ---整個網頁1200邊界--- */
+
+            /* body>外層1200content */
+        .whole-page-1200{
+            max-width: 1200px;
+            /* margin: auto; */
+            /* flex-wrap: wrap; */
+        }
+
+        /* ---其他--- */
+
+            /* 所有超連結 除底線 去顏色 */
+        a{
+            color: inherit; 
+            text-decoration: none;
+        }
+            /* 所有清單去圓點 */
+        ul{
+            list-style: none
+        }
+
+
+        /* ---所有文字--- */
+
+            /* ---標題--- */
+                /* 2nd標題 */
+        .second-title{
+            font-size: 50px;
+            line-height: 30px;
+           }
+                /* 3rd標題 */
+        .third-title{
+            font-size: 24px;
+            letter-spacing: 0.15em;
+            line-height: 30px;
+           }
+                /* 3rd次標題 */
+           .third-subtitle{
+            font-size: 20px;
+            letter-spacing: 0.15em;
+            line-height: 30px;
+           }
+            /* ---內文--- */
+                /* 一般內文 */
+        .regular-text{
+            font-size: 14px;
+            letter-spacing: 0.15em;
+            line-height: 30px;
+           }
+
+            /* ---其他文字--- */
+                /* 所有裝飾透明字 */
+        .bg-words{
+            font-size: 130px;
+            font-weight: 900;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            align-items: center; 
+
+        }
+
+        /* ---導覽列--- */
+
+        /* 導覽列區域 */
+        .pr-nav{
+            /* 導覽列底色 */
+            background-color: #ffffff80;
+            /* 尺寸 */
+            width: 100%;
+            height: 100px;   
+            /* 背景紋路bg-pattern */
+            background-image: url(/Personal_works/perosonal_work/background/bg-pattern.svg) ;
+            background-position: 50% 50%;
+            background-size: 40px;            
+        }
+        /* 導覽列區域>清單盒 */
+        .pr-nav-content{
+            max-width: 1200px;
+            margin: auto;
+            position: relative;
+            z-index: 99;
+            top: 50px;
+        }
+        /* 導覽列區域>清單盒>清單們 */
+        .pr-list{
+            display: flex;
+        }
+        /* 導覽列區域>清單盒>清單們>清單選項 */
+        .pr-list-itme{
+            /* width: 100px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+
+            /* margin: auto; */
+        }
+        /* 導覽列區域>清單盒>清單們>清單選項>logo圖案 */
+        .main-logo a img {
+            padding-top: 15px;
+            height: 55px;
+            object-fit: cover;
+        }
+        /* 導覽列區域>清單盒>清單們>清單選項>菱形選擇點 */
+        .select-icon{
+            /* 形狀設計 */
+            background-color: rgb(0, 0, 0);
+            width: 10px;
+            height: 10px;
+            margin: auto;
+            transform: rotate(45deg);
+        }
+        /* 導覽列區域>清單盒>清單們>清單選項>網頁標題文字 */
+        .page-title{
+            font-size: 18px;
+            padding-top: 15px;
+            text-align: center;
+        }
+        /* 導覽列區域>清單盒>清單們>清單選項>網頁標題文字>導覽列icon組 */
+        .list-item-icon-combo{
+            padding-top: 25px;
+            width: 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+         /* 導覽列區域>清單盒>清單們>清單選項>網頁標題文字>導覽列icon組>icon圖 */
+        .navicon img{
+            width: 20px;
+            height: 20px;
+        }
+        
+        /* ---頁末--- */
+
+        /* footer區 */
+        footer{
+            margin-top: 200px;
+            width: 100%;
+            /* 底色 */
+            background-color: #ffffff80;
+
+            /* 紋理bg-pattern */
+            background-image: url(/Personal_works/perosonal_work/background/bg-pattern.svg) ;
+            background-position: 50% 50%;
+            background-size: 40px;
+
+            /* 位置設定 */
+        }
+        /* footer區>頁末區域 */
+        .page-end-content{
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;      
+        }
+        /* footer區>頁末區域>公司資訊 */
+        .p-end-co-info-area{
+            height: 200px;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+        }
+        /* footer區>頁末區域>公司資訊>LOGO區 */
+        .logo-box{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        /* footer區>頁末區域>公司資訊>LOGO區>logo圖 */
+        .p-end-co-logo a img {
+            width: 55px;
+        }
+        /* footer區>頁末區域>公司資訊>LOGO區>公司名 */
+        .p-end-co-logo-brand{
+            font-size: 16px;
+            letter-spacing: 0.15em;
+            margin:auto; 
+            display: flex; 
+            justify-content: space-evenly;          
+        }
+        /* footer區>頁末區域>公司資訊>LOGO區>公司名>公司名單字組> */
+        .p-end-co-logo-brand-text{
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            display: table-cell;            
+        }
+        /* footer區>頁末區域>公司資訊>聯繫資訊 */
+        .p-end-co-info{
+            font-size: 10px;
+            line-height: 20px;
+            letter-spacing: 0.15em;
+            margin-top: 15px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        /* footer區>頁末區域>公司資訊>聯繫資訊>文字 */
+        .p-end-co-info p{       
+        }
+        /* footer區>頁末區域>公司資訊>聯繫資訊>信箱 */
+        .info-email{
+            margin-top: 40px;   
+        }
+
+        /* ---網站地圖區--- */
+
+        /* footer區>頁末區域>網站地圖 */
+        .directory-area{
+            max-width: 100%;
+            margin-top: 70px;
+            margin-left: auto;
+            margin-right: auto;        
+        }
+        /* footer區>頁末區域>網站地圖>三欄組*/            
+        .with-3-columns{
+            width: 100%;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        /* footer區>頁末區域>網站地圖>三欄組>每欄*/ 
+        .directory-column{
+            width: 120px;
+            margin-left: 25px;
+            margin-right: 25px;
+            vertical-align: middle;
+            line-height: 20px;
+            letter-spacing: 0.15em;
+            flex-wrap: wrap;   
+            
+        }
+        /* footer區>頁末區域>網站地圖>三欄組>每欄>每組清單*/ 
+        .directory-column-section{   
+            margin-top: 30px;    
+        }
+        /* footer區>頁末區域>網站地圖>三欄組>每欄>每組清單>清單標題*/
+        .directory-column-section-title{
+            font-size: 14px;
+            font-weight: bold; 
+        }
+        /* footer區>頁末區域>網站地圖>三欄組>每欄>每組清單>清單項目組*/
+        .directory-column-section-list{
+            font-size: 10px;
+            margin-top: 5px;
+        }
+        /* footer區>頁末區域>網站地圖>三欄組>每欄>每組清單>清單項目組>清單項目*/
+        .directory-column-section-itme{
+            margin-top: 5px;
+        }
+
+        /* ---權益--- */
+
+        /* footer區>法律權益 */
+        .footer-legal{
+            margin-top: 80px;
+            margin-bottom: 10px;            
+        }
+        /* footer區>法律權益>權益內容>內文 */
+        .footer-legal-content{
+            
+        }
+        /* footer區>法律權益>權益內容>內文 */
+        .footer-legal-box{
+            font-size: 10px;
+            line-height: 5px;
+            letter-spacing: 0.15em;
+            color: rgb(0, 0, 0,0.3);   
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        /* ---以上為main CSS內容--- */

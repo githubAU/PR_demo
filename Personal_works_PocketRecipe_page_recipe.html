@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+
+     <!-- 瀏覽器css重置 -->
+     <link rel="stylesheet" href="/Personal_works/perosonal_work/ccs/css_reset/reset_EricMeyer.css">
+
+     <!-- Font-Awesome的連結 -->
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ 
+     <!-- mainCSS頁首頁尾底色的連結 -->
+     <link rel="stylesheet" href="/Personal_works/perosonal_work/ccs/main_css/mian_css.css">
+
+     <style>
+         .recipe_page{
+            max-width: 1200px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .main_card_area{
+            display: flex;
+        }
+
+        .banner_pic{
+            
+            width: 1200px;
+            height: 600px;
+        }
+
+        .menu-recipe-text{
+            font-size: 40px;
+            height: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            margin-bottom: 0;
+            color: rgb(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        /* 菜單盒 */
+        .menu-box{
+            width: 250px;
+            background-color: #F1EDE8;
+            margin-left: 40px;
+            margin-right: auto;
+            margin-top: -100px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+         /* 菜單盒>菜單盒清單 */
+         .menu-box-list{
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            /* 文字位置 */
+            text-align: center;
+            line-height: 80px;
+            letter-spacing: 0.15em;
+        }
+        /* 菜單盒>菜單盒清單>清單項目*/
+        .menu-box-list-itme{
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.5);
+            /* color: rgba(0, 0, 0,); */
+            /* 變色使用 */
+        }
+        .dish_card{
+            margin: auto;
+            width: 800px;
+        }
+
+        /* 搜尋內容盒>搜尋列區域 */
+        .search-bar-area{
+            margin-top: 20px;
+        }
+
+        /* 搜尋內容盒>搜尋列區域>搜尋列 */
+        .search{
+            position:relative;
+            display: flex;
+            margin-top: -90px;
+        }
+        /* 搜尋內容盒>搜尋列區域>搜尋列>搜尋列的框 */
+        .search-bar{
+            width: 600px;
+            padding: 0;
+            height: 50px;
+            background-color:  rgba(255, 255, 255, 0.3);
+            border: none;
+            padding-left: 10px;
+        }
+        /* 搜尋內容盒>搜尋列區域>搜尋列>搜尋列的按鈕 */
+        .search-btn{
+            padding: 0;
+            width: 100px;
+            height: 50px;
+            border: none;
+            background-color:  rgba(255, 255, 255, 0.3);
+        }
+            
+        .shop-show{
+        display:flex ;
+        margin-left: auto;
+        margin-top: 0px;
+        position: relative;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        }
+
+        .shop-item-content{
+            width: 250px;
+        }
+        .shop-item-content-box-title{
+            margin-top: 45px;
+        }
+
+        .shop-item-title{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 40px;
+            font-weight: 800;
+            margin-left: 0;
+        }
+        .shop-item-content-box-text{
+            margin-top: 15px;
+        }
+        .shop-item-info{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 40px;
+            margin-left: 0%;
+        }
+        .shop-item-pic{
+            width: 250px;
+            height: 200px;
+            overflow: hidden; 
+            margin-top: 80px;
+            
+        }
+        .shop-item-pic img{
+            object-fit: cover;
+        }
+        
+       
+
+
+     </style>
+     
+
+
+</head>
+<body>
+
+    <div class="whole-page-1200px">
+        <header>
+            <nav class="pr-nav"><!-- 導覽列區設置最寬 -->
+                <!-- 導覽列區內的容器 -->
+                <div class="pr-nav-content">
+                    <!-- 容器內的選項們 -->
+                    <ul class="pr-list">
+                        <!-- LOGO跟itme們 -->
+                        <li class="pr-list-itme">
+                            <h1 class="main-logo">
+                                <a class="pr-link navlogo" name="homepge" href="#" title="Pocket Recipe 首頁"> <img src="/Personal_works/perosonal_work/logo/logo_PR_72ppi.png"  alt="Pocket Recipe"></a>
+                            </h1>
+                        </li>
+                        <li class="pr-list-itme">
+                            <a class="pr-link navtitile" name="recipes" href="#" title="Recipes">
+                                <!-- 需要製作菱形icon -->
+                                <div class="select-icon"></div>
+                                <h2 class="page-title">Recipes</h2>
+                            </a>
+                        </li>
+                        <li class="pr-list-itme">
+                            <a class="pr-link navtitile" name="inspiration" href="#" title="Inspiration">
+                                <div class="select-icon"></div>
+                                <h2 class="page-title">Inspiration</h2>
+                            </a>
+                        </li>
+                        <li class="pr-list-itme">
+                            <a class="pr-link navtitile" name="Blog" href="#" title="Blog">
+                                <div class="select-icon"></div>
+                                <h2 class="page-title">Blog</h2>
+                            </a>
+                        </li>
+                        <li class="pr-list-itme">
+                            <a class="pr-link navtitile" name="ourkitchen" href="#" title="Our Kitchen">
+                                <div class="select-icon"></div>
+                                <h2 class="page-title">Our Kitchen</h2>
+                            </a>
+                        </li>
+                        <li class="pr-list-itme">
+                            <a class="pr-link navtitile" name="Shop" href="#" title="Shop">
+                                <div class="select-icon"></div>
+                                <h2 class="page-title">Shop</h2>
+                            </a>
+                        </li>
+                        <li class="pr-list-itme list-item-icon-combo">
+                            <div class="pr-list-item-icon">
+                                <a class="pr-link navicon" name="icon" href="#" title="Bag">
+                                    <img src="/Personal_works/perosonal_work/icon/icon_bag.png" alt="bag">
+                                </a>
+                            </div>
+                            <div class="pr-list-item-icon">
+                                <a class="pr-link navicon" name="icon" href="#" title="Account">
+                                    <img src="/Personal_works/perosonal_work/icon/icon_account.png" alt="account">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    
+        </header>
+
+        <div class="recipe_page">
+            <div>
+                <img class="banner_pic" src="/Personal_works/perosonal_work/img/page/page_recipe/recipe_bannerA.jpg" alt="">                
+            </div>
+
+            <div class="main_card_area">
+                <div class="menu-box"><!-- 左側菜單盒 -->  
+                    <h2 class="menu-recipe-text">Recipe</h2> 
+                    <ul class="menu-box-list">
+                        <li class="menu-box-list-itme">
+                        <a class="menu-box-list-link" href="#">
+                            <div>Meat</div>
+                            <!-- 菱形 -->
+                            <div class="menu-box-list-sort-select-icon"></div>
+                            <!--  底線  -->
+                            <div class=" menu-box-list-sort-select-underline"></div>
+                        </a>
+                        </li>
+                        <li class="menu-box-list-itme">
+                        <a class="menu-box-list-link" href="#">
+                            <div>Seafood</div>
+                            <!-- 菱形 -->
+                            <div class="menu-box-list-sort-select-icon"></div>
+                            <!--  底線  -->
+                            <div class=" menu-box-list-sort-select-underline"></div>
+                        </a>
+                        </li>
+                        <li class="menu-box-list-itme">
+                        <a class="menu-box-list-link" href="#">
+                            <div>Vegan</div>
+                            <!-- 菱形 -->
+                            <div class="menu-box-list-sort-select-icon"></div>
+                            <!--  底線  -->
+                            <div class=" menu-box-list-sort-select-underline"></div>
+                        </a>
+                        </li>
+                        <li class="menu-box-list-itme">
+                        <a class="menu-box-list-link" href="#">
+                            <div>Drink</div>
+                            <!-- 菱形 -->
+                            <div class="menu-box-list-sort-select-icon"></div>
+                            <!--  底線  -->
+                            <div class=" menu-box-list-sort-select-underline"></div>
+                        </a>
+                        </li>
+                        <li class="menu-box-list-itme">
+                        <a class="menu-box-list-link" href="#">
+                            <div>Dessert</div>
+                            <!-- 菱形 -->
+                            <div class="menu-box-list-sort-select-icon"></div>
+                            <!--  底線  -->
+                            <div class=" menu-box-list-sort-select-underline"></div>
+                        </a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+                <div class="dish_card">
+                    <div class="search-bar-area"><!-- 搜尋列區 -->
+                        <div class="wrap">
+                            <div class="search">
+                                <input class="search-bar" type="text" name="search" id="search" placeholder="Searching...">
+                                <button class="search-btn"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>               
+                    </div>
+                    <div class="shop-show"> <!-- 商品展示區 -->
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-item"><!-- 商品圖卡 -->
+                            <div class="shop-item-pic"><!-- 商品照片 -->
+                                <img src="/Personal_works/perosonal_work/img/page/homepage/home-page-topnews-pic.jpg" alt="">
+                            </div>
+                            <div class="shop-item-content"><!-- 商品文字區 -->
+                                <div class="shop-item-content-box-title"><!-- 商品名稱 -->
+                                    <p class="shop-item-title">
+                                    Chef's Knife
+                                    </p>
+                                </div>
+                                <div class="shop-item-content-box-text"><!-- 商品說明 -->
+                                    <p class="shop-item-info">We know this world is bad sometimes. Whatever.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="page-end-content">
+            <section class="p-end-co-info-area">
+                <div class="p-end-co-info logo-box">
+                    <div class="p-end-co-logo">
+                        <a class="p-end-co-logo-link" href="#" title="Pocket Recipe 首頁"><img src="/Personal_works/perosonal_work/logo/logo_PR_72ppi.png" alt="商標">
+                        </a>
+                    </div>
+                    <div class="p-end-co-logo-brand"> 
+                        <span class="p-end-co-logo-brand-text">POCKET</span>
+                        <span class="p-end-co-logo-brand-text">RECIPE</span>            
+                    </div>
+                </div>
+                <div class="p-end-co-info info-text">           
+                    <p>71 Gillies St, Fairfield VIC 3078, Australia
+                    <br>
+                     Monday to Friday 7am to 5pm
+                     <br>
+                     1234 567 890
+                    </p>
+                </div>
+                <p class="p-end-co-info info-email"> <a href="mealto:info@pocketrecipe.com.au">info@pocketrecipe.com.au</a></p>
+            </section>
+            <section class="directory-area">
+                <nav class="directory with-3-columns">
+                    <div class="directory-column">
+                        <div class="directory-column-section">
+                            <h3 class="directory-column-section-title">Recipes</h3>
+                            <ul class="directory-column-section-list">
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Meat</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Seafood</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Vegan</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Drink</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Dessert</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="directory-column-section">
+                            <h3 class="directory-column-section-title">Inspiration</h3>
+                            <ul class="directory-column-section-list">
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Daily Recipes</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Tools</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="directory-column">
+                        <div class="directory-column-section">
+                            <h3 class="directory-column-section-title">Our Kitchen</h3>
+                            <ul class="directory-column-section-list">
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Reservation</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Events</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Addrees</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="directory-column-section">
+                            <h3 class="directory-column-section-title">Blog</h3>
+                            <ul class="directory-column-section-list">
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Food News</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Podcast</a>
+                                </li>
+                                
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="directory-column">
+                        <div class="directory-column-section">
+                            <h3 class="directory-column-section-title">Shop</h3>
+                            <ul class="directory-column-section-list">
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Kitchenware</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Meal Box</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Book</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Forzen Food</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="directory-column-section">
+                            <h3 class="directory-column-section-title">Account</h3>
+                            <ul class="directory-column-section-list">
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Login</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Register</a>
+                                </li>
+                                <li class="directory-column-section-itme">
+                                    <a class="directory-column-section-link" href="#">Manage Account</a>
+                                </li>
+                                
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </div>
+        <section class="footer-legal">
+        <div class="footer-legal-content ">
+            <div class="footer-legal-box copyright">© 2011-2022 POCKET RECIPE, Inc.</div>
+            <div class="footer-legal-box shcoolpractise">
+                Student's Profile Website Design
+            </div>
+        </div>
+        </section>
+    </footer>
+    
+</body>
+</html>
